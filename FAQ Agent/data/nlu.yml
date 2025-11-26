@@ -1,0 +1,61 @@
+version: "3.0"
+nlu:
+- intent: greet
+  examples: |
+    - hi
+    - hello
+    - hey
+    - good morning
+    - hey there
+
+- intent: goodbye
+  examples: |
+    - bye
+    - goodbye
+    - see you later
+    - talk to you soon
+
+- intent: thanks
+  examples: |
+    - thanks
+    - thank you
+    - appreciate it
+
+- intent: ask_duration
+  examples: |
+    - How long is the internship?
+    - What's the duration of the internship?
+    - How many weeks will the internship last?
+    - Is it a 3-month internship?
+
+- intent: ask_stipend
+  examples: |
+    - Do interns get paid?
+    - What's the stipend for the internship?
+    - How much do interns earn?
+    - Is there any compensation?
+
+- intent: ask_requirements
+  examples: |
+    - What are the requirements to apply?
+    - Who is eligible for the internship?
+    - Do I need to be a student?
+    - What skills are required?
+
+- intent: ask_deadline
+  examples: |
+    - When is the application deadline?
+    - What is the deadline to apply?
+    - When should I submit my application?
+
+- intent: ask_remote
+  examples: |
+    - Is the internship remote?
+    - Can I work from home?
+    - Is remote work allowed for interns?
+
+- intent: ask_roles
+  examples: |
+    - What roles are available?
+    - Which positions do interns work in?
+    - Are there engineering internships?

@@ -1,0 +1,41 @@
+version: "3.0"
+rules:
+- rule: Greet user
+  steps:
+  - intent: greet
+  - action: utter_greet
+
+- rule: Goodbye
+  steps:
+  - intent: goodbye
+  - action: utter_goodbye
+
+- rule: Ask duration
+  steps:
+  - intent: ask_duration
+  - action: utter_ask_duration
+
+- rule: Ask stipend
+  steps:
+  - intent: ask_stipend
+  - action: utter_ask_stipend
+
+- rule: Ask requirements
+  steps:
+  - intent: ask_requirements
+  - action: utter_requirements
+
+- rule: Ask deadline
+  steps:
+  - intent: ask_deadline
+  - action: utter_ask_deadline
+
+- rule: Ask remote
+  steps:
+  - intent: ask_remote
+  - action: utter_ask_remote
+
+- rule: Ask roles
+  steps:
+  - intent: ask_roles
+  - action: utter_ask_roles

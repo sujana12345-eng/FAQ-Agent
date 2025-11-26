@@ -1,0 +1,48 @@
+version: "3.0"
+
+intents:
+  - greet
+  - goodbye
+  - ask_duration
+  - ask_stipend
+  - ask_requirements
+  - ask_deadline
+  - ask_remote
+  - ask_roles
+  - thanks
+  - deny
+
+responses:
+  utter_greet:
+  - text: "Hello! I can help with internship FAQs. How can I help you today?"
+
+  utter_goodbye:
+  - text: "Goodbye — feel free to ask more questions anytime!"
+
+  utter_ask_duration:
+  - text: "Internship durations typically range from 8 to 12 weeks, but this depends on the program. Do you have a specific program in mind?"
+
+  utter_ask_stipend:
+  - text: "Many internships offer stipends; amounts vary. Typical monthly stipends are between $500-$2500 depending on location and company."
+
+  utter_ask_deadline:
+  - text: "Application deadlines vary by program; common cycles are spring (Jan-Mar) and summer (Feb-May). Check the program page for exact dates."
+
+  utter_ask_remote:
+  - text: "Some internships allow remote work while others require on-site presence. The posting will indicate remote, hybrid, or on-site."
+
+  utter_ask_roles:
+  - text: "Intern roles often include software engineering, data science, product, design, and marketing. Which area interests you?"
+
+  utter_requirements:
+  - text: "Typical requirements: enrolled student (or recent graduate), relevant coursework or projects, resume, and sometimes a cover letter or portfolio."
+
+  utter_default:
+  - text: "Sorry, I didn't understand. Can you rephrase or ask a different question about internships?"
+
+actions:
+  - action_internship_requirements
+
+session_config:
+  session_expiration_time: 60
+  carry_over_slots_to_new_session: true
